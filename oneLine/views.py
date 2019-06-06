@@ -7,3 +7,7 @@ from .models import WiseSaying
 class WiseSayingView(viewsets.ModelViewSet):
     serializer_class = WiseSayingSerializer
     queryset = WiseSaying.objects.all()
+
+
+def main(request):
+    return render(request, 'index.html', {})
